@@ -3,50 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | QR code component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    body {
-      background-color: #D5E1EF;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container{
-      width: 320px;
-      border-radius: 20px;
-      padding: 16px 16px 40px 16px;
-      background-color: #FFF;
-      text-align: center;
-    }
-    img{
-      width: 288px;
-      height: 288px;
-      border-radius: 10px;
-    }
-    .tittle{
-      color: #1F314F;
-      font-size: 26px;
-      font-weight: bold;
-    }
-    .description{
-      font-size: 21px;
-      color: #68778D;
-    }
   </style>
 </head>
 <body>
-  <main class="container">
-    <img src="images/image-qr-code.png" alt="qr-code">
-    <h1 class="tittle">
-  Improve your front-end skills by building projects
-    </h1>
-    <h3 class="description">
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-    </h3>
-  </main>
+ <div class="card__box">
+     <img class="card__illustration" src="./assets/images/illustration-article.svg" alt="illustration" />
+     <div class="main__block">
+         <div class="gap-bottom">
+             <span class="main__tab">
+                 Learning
+             </span>
+         </div>
+         <div class="gap-bottom">
+                <span class="date_tab">
+                    Published 21 Dec 2023
+                </span>
+        </div>
+         <div class="gap-bottom gap-top">
+                 <h1 class="card__title">
+                    HTML & CSS foundations
+                 </h1>
+         </div>
+         <div class="gap-top">
+                 <p class="card_description">
+                     These languages are the backbone of every website, defining structure, content, and presentation.
+                 </p>
+         </div>
+     </div>
+     <div class="auth__box">
+         <img class="auth__avatar" src="./assets/images/image-avatar.webp" alt="avatar">
+         <span class="auth__text">
+            Greg Hooper
+         </span>
+     </div>
+ </div>
 </body>
 </html>
