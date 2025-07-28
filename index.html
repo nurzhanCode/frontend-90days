@@ -1,49 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Frontend Mentor | Blog preview card</title>
+  <title>Frontend Mentor | Browser extensions manager UI</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
- <main class="card__box">
-     <img class="card__illustration" src="./assets/images/illustration-article.svg" alt="illustration" />
-     <div class="main__block">
-         <div class="gap-bottom">
-             <span class="main__tab">
-                 Learning
-             </span>
-         </div>
-         <div class="gap-bottom">
-                <span class="date_tab">
-                    Published 21 Dec 2023
-                </span>
-        </div>
-         <div class="gap-bottom gap-top">
-                 <h1 class="card__title">
-                    HTML & CSS foundations
-                 </h1>
-         </div>
-         <div class="gap-top">
-                 <p class="card_description">
-                     These languages are the backbone of every website, defining structure, content, and presentation.
-                 </p>
-         </div>
-     </div>
-     <div class="auth__box">
-         <img class="auth__avatar" src="./assets/images/image-avatar.webp" alt="avatar">
-         <span class="auth__text">
-            Greg Hooper
-         </span>
-     </div>
- </main>
+  <div class="container">
+    <header class="d--flex">
+        <div class="header__logo"></div>
+        <div><button id="theme-toggle" class="header__btn"><span class="header__menu"></span></button></div>
+    </header>
+    <main>
+      <nav class="d--flex d-filter">
+            <h1 class="nav__title">Extensions List</h1>
+            <div>
+              <button data-filter="all" class="filter__btn btn__active">All</button>
+              <button data-filter="active" class="filter__btn">Active</button>
+              <button data-filter="inactive" class="filter__btn">Inactive</button>
+           </div>
+      </nav>
+      <section id="card-container"></section>
+    </main>
+
+  </div>
 </body>
+<script src="script.js"></script>
 </html>
